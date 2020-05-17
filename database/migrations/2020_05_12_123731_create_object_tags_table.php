@@ -18,6 +18,7 @@ class CreateObjectTagsTable extends Migration
             $table->integer('object_id');
             $table->integer('tag_id');
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 
